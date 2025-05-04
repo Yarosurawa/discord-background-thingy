@@ -15,6 +15,10 @@
     --info-warning-foreground: #f007;
     --chat-text-muted: #fffa;
     --background-message-highlight:#f007;
+    --brand-500: #c22;
+    --button-filled-brand-background: #e22;
+    --mention-background: #f003;
+    --mention-foreground: #f44;
 }
 
 #app-mount, .layer__960e4.baseLayer__960e4 {
