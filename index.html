@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        #svg{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .poly {
+            translate: calc(50vw - calc(150px * var(--scale))) calc(50vh - calc(130px * var(--scale)));
+            translate: 50vw 50vh;
+            animation: rot calc(3s * var(--scale)) infinite linear;
+            scale: var(--scale);
+        }
+
+        @keyframes rot {
+            0% {rotate: 0;}
+            /* 50% {rotate: 180deg;} */
+            100% {rotate: 359.9deg;}
+        }
+
+    </style>
+</head>
+<body>
+    <svg id="svg"></svg>      
+
+    <script>
+        const svgg =document.getElementById("svg")
+
+        const searchParams = new URLSearchParams(window.location.search);
+        let max = parseInt((searchParams.get('hexNum')))
+        let scal = parseFloat((searchParams.get('scale')))
+        let amp = parseFloat((searchParams.get('amplifier')))
+        
+
+        for (let i = 0.1; i < max + 1; i++) {
+            svgg.innerHTML += `<polygon class="poly" style="--scale: ${(Math.pow(i, amp)) * scal}" points="300,120 225,250 75,250 0,130 75,0 225,0" fill="none"  stroke="white" stroke-width="5"></polygon>`
+        }
+
+        console.log(
+            `To deal with settings of this buggy asf thing use those options to add at the end of the url:
+                hexNum
+                scale
+                amplifier
+
+                for example: 
+                https://thisurl/?hexNum=80&scale=2&amplifier=-0.2
+            `
+        )
+    </script>
+</body>
+</html>
