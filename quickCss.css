@@ -17,9 +17,12 @@
     --background-message-highlight:#f007;
     --brand-500: #c22;
     --bg-brand: #f22;
+    --text-brand: #f22;
     --button-filled-brand-background: #e22;
     --mention-background: #f003;
     --mention-foreground: #f44;
+    --button-filled-brand-background-hover: #f009;
+    --opacity-blurple-16: #f002;
 }
 
 #app-mount, .layer__960e4.baseLayer__960e4 {
