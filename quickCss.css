@@ -2,7 +2,7 @@
 
 * {
     --background-base-lower: #0004;
-    --background-base-lowest: #0003;
+    --background-base-lowest: #f002;
     --background-primary: #0001;
     --background-secondary: #0002;
     --background-tertiary: #0003;
@@ -11,13 +11,15 @@
     --border-subtle: #0002;
     --border-strong: #0004;
     --app-border-frame: #000a;
-    --background-mentioned: #e6b99766;
+    --background-mentioned: #fe385250;
+    --info-warning-foreground: #f007;
     --chat-text-muted: #fffa;
+    --background-message-highlight:#f007;
 }
 
 #app-mount, .layer__960e4.baseLayer__960e4 {
-    background: url(https://img.freepik.com/premium-photo/traditional-art-piece-depicting-blooming-plum-flowers-season-spring_117038-46452.jpg?w=1380) !important; 
-    background-size: cover !important;
+    background: url(https://i.pinimg.com/1200x/84/72/8e/84728e070e0bbd9fb29b24740e9473ae.jpg); 
+    background-size: cover;
 }
 
 .visual-refresh .sidebarList_c48ade {
@@ -34,7 +36,7 @@
 }
 
 .bar_c38106 {
-    background: #000c !important;
+    background: #000c;
 }
 
 .visual-refresh .wrapper_ef3116 { 
@@ -42,20 +44,20 @@
 }
 
 .container__9293f.themed__9293f {
-    background: #0008 !important;
+    background: #0008;
 }
 
 .searchBar__35e86 {
-    background: #0006 !important;
+    background: #0006;
 }
 
 .visual-refresh .sidebarListRounded_c48ade { 
-    border-radius: 0 !important;
+    border-radius: 0;
     background: #0004;
 }
 
 .visual-refresh .container__2637a {
-    background: #0006 !important;
+    background: #0006;
 }
 
 .visual-refresh .panels_c48ade {
@@ -74,9 +76,18 @@
 
 :where(.visual-refresh) .themedBackground__74017{
     background: #0006;
+    box-shadow: 0 0 20px #f004;
+
 }
  .visual-refresh .channelTextArea_f75fb0 {
     background: #0000;
+    box-shadow: 0 0 10px #f00;
+    transition: all 200ms ease;
+}
+
+.visual-refresh .channelTextArea_f75fb0:focus-within {
+    background: #0005;
+    box-shadow: 0 0 20px #f00;
 }
 
 .theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c {
@@ -90,4 +101,3 @@
 .content__235ca, .overflow__82b15 {
     color: #fffa; 
 }
-
