@@ -1,0 +1,93 @@
+/* this is my personal css for vencord, use it if you wanna idrc */
+
+* {
+    --background-base-lower: #0004;
+    --background-base-lowest: #0003;
+    --background-primary: #0001;
+    --background-secondary: #0002;
+    --background-tertiary: #0003;
+    --bg-base-secondary: #0002;
+    --bg-base-tertiary: #0001;
+    --border-subtle: #0002;
+    --border-strong: #0004;
+    --app-border-frame: #000a;
+    --background-mentioned: #e6b99766;
+    --chat-text-muted: #fffa;
+}
+
+#app-mount, .layer__960e4.baseLayer__960e4 {
+    background: url(https://img.freepik.com/premium-photo/traditional-art-piece-depicting-blooming-plum-flowers-season-spring_117038-46452.jpg?w=1380) !important; 
+    background-size: cover !important;
+}
+
+.visual-refresh .sidebarList_c48ade {
+    border-left: 0;
+}
+
+.visual-refresh .scroller__99e7c {
+    background: #0003;
+    
+}
+
+.visual-refresh .guildSeparator__252b6 {
+    display: none;
+}
+
+.bar_c38106 {
+    background: #000c !important;
+}
+
+.visual-refresh .wrapper_ef3116 { 
+    background: #0009;
+}
+
+.container__9293f.themed__9293f {
+    background: #0008 !important;
+}
+
+.searchBar__35e86 {
+    background: #0006 !important;
+}
+
+.visual-refresh .sidebarListRounded_c48ade { 
+    border-radius: 0 !important;
+    background: #0004;
+}
+
+.visual-refresh .container__2637a {
+    background: #0006 !important;
+}
+
+.visual-refresh .panels_c48ade {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+}
+
+.visual-refresh .sidebar_c48ade:after {
+    background: #000a;
+}
+
+.visual-refresh.theme-midnight .content_f75fb0, .visual-refresh.theme-midnight .subtitleContainer_f75fb0 {
+    border-left: none;
+}
+
+:where(.visual-refresh) .themedBackground__74017{
+    background: #0006;
+}
+ .visual-refresh .channelTextArea_f75fb0 {
+    background: #0000;
+}
+
+.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c {
+    transition: background 250ms ease;
+}
+
+.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover {
+    background: #0003;
+}
+
+.content__235ca, .overflow__82b15 {
+    color: #fffa; 
+}
+
